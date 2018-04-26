@@ -5,7 +5,7 @@ from my_app.controllers.api_controllers import app_api
 app = Flask(__name__)
 
 # # Configurations
-# app.config.from_object('config')
+app.config.from_object('config')
 
 
 # Register blueprints
