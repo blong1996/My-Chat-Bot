@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, json
 
 app = Flask(__name__)
 
@@ -22,7 +22,7 @@ def chatbot():
 
     req = request.get_json(silent=True, force=True)
 
-
+    print(json.dumps(req, indent=4))
 
     # dissect the incoming message
     try:
